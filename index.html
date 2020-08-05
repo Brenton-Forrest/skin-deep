@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Skin lesion early warning from home">
+    <meta name="author" content="Nick Marko, Tim Offereins, Adam Croker, Lachlan Smith, Elijah Messenger-Fewster, Brenton Forrest">
+    <title>Skin Deep AI · Skin Lesion Detection</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <!-- Navbar -->
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" width="140" height="40" alt="" loading="lazy">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="team/">The Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Carousel -->
+    <main role="main">
+      <div class="container">
+        <div id="sdCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#sdCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#sdCarousel" data-slide-to="1"></li>
+            <li data-target="#sdCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/face-code.jpg" style="object-fit:cover;">
+              <div class="container">
+                <div class="carousel-caption text-right">
+                  <h1>Machine Learning</h1>
+                  <p>Enter tagline or info lead-in here</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/ai-touch.jpg" style="object-fit:cover;">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Closer than ever</h1>
+                  <p>Enter tagline or info lead-in here</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/ai-chip.jpg" style="object-fit:cover;">
+              <div class="container">
+                <div class="carousel-caption text-left">
+                  <h1>Advancements in Technology</h1>
+                  <p>Enter tagline or info lead-in here</p>
+                  <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#sdCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#sdCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Marketing messaging and featurettes
+      ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+      <div class="container marketing">
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Skin Deep AI<br><span class="text-muted">It’ll blow your mind.</span></h2>
+            <p class="lead">Using Machine Learning we can detect potentially harmful skin lesions, such as melanoma, early and guide you on seeking help from a medical professional.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/ai-face.jpg" style="width:450px;height:450px;object-fit:cover;" class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Early Detection<br><span class="text-muted">Using inexpensive tools.</span></h2>
+            <p class="lead">With the use of your camera equipped mobile device and an inexpensive attachment readily avaiable for purchase from many digital marketplaces. Skin Deep AI can help you monitor skin spots along with your doctor.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/mole-stock.jpg" style="width:450px;height:450px;object-fit:cover;" class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Seek Help<br><span class="text-muted">From your doctor.</span></h2>
+            <p class="lead">Skin Deep AI is a tool to help you in the early detection and monitoring of potentially harmful skin lesions. While our machine learning algarithm is finely tuned and accurate it does nto replace advice from a medical professional.</p>
+          </div>
+          <div class="col-md-5">
+            <img src="assets/dr-stock.jpg" style="width:450px;height:450px;object-fit:cover;" class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+      </div><!-- /.container -->
+
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 Tetradeca, COSC2196.</p>
+      </footer>
+    </main>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
