@@ -6,12 +6,15 @@
     <meta name="description" content="Skin lesion early warning from home">
     <meta name="author" content="Nick Marko, Tim Offereins, Adam Croker, Lachlan Smith, Elijah Messenger-Fewster, Brenton Forrest">
     <title>Skin Deep AI · Skin Lesion Detection</title>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
   </head>
-  <!-- Navbar -->
+
+  <!-- Body -->
   <body>
+    <!-- Navbar -->
     <header>
       <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
         <div class="container">
@@ -24,13 +27,13 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="nav-link" href="../">Home</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">The Team<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link" href="#">Skin Deep</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="../team/">About us</a>
               </li>
             </ul>
             <form class="form-inline mt-2 mt-md-0">
@@ -41,12 +44,11 @@
         </div>
       </nav>
     </header>
-    
-    <main role="main">
 
+    <main role="main">
       <!-- The Tetradeca Team
       ================================================== -->
-      <!-- Jumbotron -->
+      <!-- Title -->
       <div class="container">
         <div class="jumbotron" style="margin-top:6em;background-color:#fff;">
           <h1 class="display-2">Meet The Team</h1>
@@ -144,62 +146,307 @@
             </div>
           </div>
         </div>
-        <div class="jumbotron" style="margin-top:6em;background-color:#fff;">
-          <h1>Team Processes</h1>
-          <hr class="my-4">
-          <p>Processes here!</p>
-        </div>
-        <div class="jumbotron" style="margin-top:6em;background-color:#fff;">
-          <h1>Career Plans</h1>
-          <hr class="my-4">
-        </div>     
-        <div class="card text-center">
+        <!-- About the team -->
+        <div class="card text-left" style="margin-bottom:2rem;">
           <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+            <h2>How We Work</h2>
+            <ul class="nav nav-tabs card-header-tabs" id="processTab" role="tablist">
               <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#comparison" role="tab" aria-controls="comparison" aria-selected="true">Contrast & Comparison</a>
+                <a class="nav-link text-muted active" id="personality-tab" data-toggle="tab" href="#personality" role="tab" aria-controls="personality" aria-selected="true">Personalities</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="home-tab" data-toggle="tab" href="#nick" role="tab" aria-controls="nick" aria-selected="false">Nick</a>
+                <a class="nav-link text-muted" id="processes-tab" data-toggle="tab" href="#processes" role="tab" aria-controls="processes" aria-selected="true">Processes</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tim" role="tab" aria-controls="tim" aria-selected="false">Tim</a>
+                <a class="nav-link text-muted" id="home-tab" data-toggle="tab" href="#tools" role="tab" aria-controls="tools" aria-selected="false">Tools</a>
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div class="tab-content" id="howWeWork">
+              <div class="tab-pane fade show active" id="personality" role="tabpanel" aria-labelledby="personality-tab">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/visual.png" class="align-self-start mr-3" alt="Visual Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left"> Visual learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#nickModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="nickModal" tabindex="-1" aria-labelledby="nickModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="../assets/results/nick.png" style="width:100%;height:auto;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Nick <a href="https://www.16personalities.com/enfp-personality" class="badge badge-pill badge-info">ENFP</a></h5>
+                          <p>While working as a group I believe my personality allows me to be enthusiastic about ideas in initiate discussions that benefit the group as a whole. Using intuition to sense when things are and aren't working allows me to help the group grow and encourage building on each others strong suits. Curiosity and innovation can be beneficial when putting forward ideas and devising new ways to solve problems and clear hurdles that the group may come across. Learning visually can be quite common and it may be helpful to many to include visual aids when organising the group and explaining thoughts. My creativity test leaning towards curiosity could help come the group think outside of the box.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/visual.png" class="align-self-start mr-3" alt="Visual Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left">&nbspVisual learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#timModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="timModal" tabindex="-1" aria-labelledby="timModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="../assets/results/tim.png" style="width:100%;height:auto;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Tim <a href="https://www.16personalities.com/istp-personality" class="badge badge-pill badge-info">ISTP</a></h5>
+                          <p>I have been coined a 'Tubulent Virtuoso' by the Myers-Brigss test that attempts to analyse and catagorise individual personalities. I can appear simplistic at a glance but am actualy quite enigmatic. Friendly but private, calm but spontaneous. Extremely curious but struggle staying focused on formal studies. Most of those statements I would tend to agree with and fit certain aspects of my life to date. Within a group setting such as this I see myself as the internal engine room. I am naturally an organiser and operationally minded and within a group I tend to focus on ensuring the required tools are available to make the tasks at hand easy to complete. While a natural leader to an extent i have found that it fill well along side a more extraverted individual as the driving force behind them.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/visual.png" class="align-self-start mr-3" alt="Visual Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left">&nbspVisual learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#adamModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="adamModal" tabindex="-1" aria-labelledby="adamModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="../assets/results/adam.jpg" style="width:100%;height:auto;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Adam <a href="https://www.16personalities.com/estp-personality" class="badge badge-pill badge-info">ESTP</a></h5>
+                          <p>The Myers Briggs test shows I am somewhat a grounded, logical, and social learner. The ESTP characteristics include “Practical and Observant” and “Resourceful and Adaptable.” This shows that I gravitate to be a follower in the team, taking on assigned tasks, rather than a leader. Due to my visual learning style, I will be contributing to the group work using several images and diagrams to hopefully convey information concisely. An 8/10 Verbal reasoning test shows that I may be helpful in digesting all the requirements of the assignment and communicating this to the team where necessary.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/touch.png" class="align-self-start mr-3" alt="Kinesthetic Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left">&nbspTouch learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#lachlanModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="lachlanModal" tabindex="-1" aria-labelledby="lachlanModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <h5>Psychometric Test</h5>
+                                <p>I took the test at <a href="www.psychometrictest.org.uk">www.psychometrictest.org.uk</a><br>The test determines your resiliance over five personality traits being:
+                                  <ul>
+                                    <li>Adaptability</li>
+                                    <li>Self-Control</li>
+                                    <li>Self-Sufficiency</li>
+                                    <li>Optimism</li>
+                                    <li>Persistance</li>
+                                  </ul>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Lachlan <a href="https://www.16personalities.com/istj-personality" class="badge badge-pill badge-info">ISTJ</a></h5>
+                          <p>The Myers Briggs personality test indicated that I have a logistician personality type, this shows that I am a task orientated work mate that will focus on completing a task before a deadline. Being a kinaesthetic learner means that the best way I learn to do something is by doing the task itself, this is useful in a team setting as I am always willing to take on new jobs and learn as I go. My Psychometric resilience test shows that I have high self-control and self-sufficiency traits, this shows that I will be able to not make emotional decisions when interacting with team mates in stressful situations, I can also be left alone with a task and be able to complete it without help and/or supervision.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/touch.png" class="align-self-start mr-3" alt="kinesthetic Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left">&nbspTouch learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#elijahModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="elijahModal" tabindex="-1" aria-labelledby="elijahModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="../assets/results/elijah.jpg" style="width:100%;height:auto;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Elijah <a href="https://www.16personalities.com/enfj-personality" class="badge badge-pill badge-info">ENFJ</a></h5>
+                          <p>As a Kinesthetic learner I'm more of a hands learner. Which makes it difficult for my teammates to show me new things without a hands on experience which could hinder the team otherwise I like to assist and cooperate with my teammates more evidently and draw my coworkers into teams where everyone can feel comfortable expressing their opinions and suggestions, working together to develop win-win situations that get the job done. My tolerance, open-mindedness and easy sociability make it easy for my teammates to relate.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div class="media">
+                        <figure class="figure">
+                          <img src="../assets/audio.png" class="align-self-start mr-3" alt="Audio Learning" style="width:84px;height:auto;">
+                          <figcaption class="figure-caption text-left">&nbspAudio learner</figcaption>
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#brentonModal">Custom Test</button>
+                        </figure>
+                        <!-- Modal -->
+                        <div class="modal fade" id="brentonModal" tabindex="-1" aria-labelledby="brentonModalLabel" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Custom Test Result</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <img src="../assets/results/brenton.png" style="width:100%;height:auto;">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="media-body">
+                          <h5 class="mt-0">Brenton <a href="https://www.16personalities.com/intp-personality" class="badge badge-pill badge-info">INTP</a></h5>
+                          <p>My Myers-Briggs Test says I’m innovative, resourceful, and hard-working. The INTP personality type is armed with a powerful intellect and vivid imagination and can overcome or out-maneuver obstacles that seem unbeatable. And with my Auditory learning style shows I learn through listening and repeating skills to sort through the information that is sent to me. My Big Five test shows my Conscientiousness personality trait of being careful, and diligent, this implies I have a desire to do a task well, and to take obligations to others seriously, while showing self-discipline, act dutifully, and aim for achievement.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show" id="processes" role="tabpanel" aria-labelledby="processes-tab">
+                <p>The processes implemented within the development of Assignment 2 provided all Tetradeca team members with a clear understanding of the project. With a system in place to track the tasks assigned to each of us, along with their progression, we were able to efficiently complete all project elements. This, combined with strong work ethic from the team, enabled us to submit high quality content. Further to ...</p>
+              </div>
+              <div class="tab-pane fade show" id="tools" role="tabpanel" aria-labelledby="tools-tab">Tools</div>
+            </div>
+          </div>
+        </div>
+        <!-- Team careers & ideal jobs -->
+        <div class="card text-left" style="margin-bottom:2rem;">
+          <div class="card-header">
+            <h2>Team Career Plans</h2>
+            <ul class="nav nav-tabs card-header-tabs" id="teamCareerPlans" role="tablist">
+              <li class="nav-item" role="presentation">
+                <a class="nav-link text-muted active" id="comparison-tab" data-toggle="tab" href="#comparison" role="tab" aria-controls="comparison" aria-selected="true">Contrast & Comparison</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#adam" role="tab" aria-controls="adam" aria-selected="false">Adam</a>
+                <a class="nav-link text-muted" id="nick-tab" data-toggle="tab" href="#nick" role="tab" aria-controls="nick" aria-selected="false">Nick</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#lachlan" role="tab" aria-controls="lachlan" aria-selected="false">Lachlan</a>
+                <a class="nav-link text-muted" id="tim-tab" data-toggle="tab" href="#tim" role="tab" aria-controls="tim" aria-selected="false">Tim</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#elijah" role="tab" aria-controls="elijah" aria-selected="false">Elijah</a>
+                <a class="nav-link text-muted" id="adam-tab" data-toggle="tab" href="#adam" role="tab" aria-controls="adam" aria-selected="false">Adam</a>
               </li>
               <li class="nav-item" role="presentation">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#brenton" role="tab" aria-controls="brenton" aria-selected="false">Brenton</a>
+                <a class="nav-link text-muted" id="lachlan-tab" data-toggle="tab" href="#lachlan" role="tab" aria-controls="lachlan" aria-selected="false">Lachlan</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link text-muted" id="elijah-tab" data-toggle="tab" href="#elijah" role="tab" aria-controls="elijah" aria-selected="false">Elijah</a>
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link text-muted" id="brenton-tab" data-toggle="tab" href="#brenton" role="tab" aria-controls="brenton" aria-selected="false">Brenton</a>
               </li>
             </ul>
           </div>
           <div class="card-body">
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="comparison" role="tabpanel" aria-labelledby="comparison-tab">We all different, we are all unique</div>
-              <div class="tab-pane fade" id="nick" role="tabpanel" aria-labelledby="nick-tab">Nick's career plan</div>
-              <div class="tab-pane fade" id="tim" role="tabpanel" aria-labelledby="tim-tab">Tim's career plan</div>
-              <div class="tab-pane fade" id="adam" role="tabpanel" aria-labelledby="adam-tab">Adam's career plan</div>
-              <div class="tab-pane fade" id="lachlan" role="tabpanel" aria-labelledby="lachlan-tab">Lachlan's career plan</div>
-              <div class="tab-pane fade" id="elijah" role="tabpanel" aria-labelledby="elijah-tab">Elijah's career plan</div>
-              <div class="tab-pane fade" id="brenton" role="tabpanel" aria-labelledby="brenton-tab">Brenton's career plan</div>
+              <div class="tab-pane fade show active" id="comparison" role="tabpanel" aria-labelledby="comparison-tab">
+                <img src="../assets/ven.jpeg" class="img-fluid mx-auto d-block" style="max-width:75%">
+                <p>As you can see from the diagram above, while there are some similarities between the ideal career paths of each of us.</p>
+              </div>
+              <div class="tab-pane fade" id="nick" role="tabpanel" aria-labelledby="nick-tab">
+                <h4>Ideal Job: Senior Software Engineer</h4>
+                <p>With software engineer ranked 11th in the 2018 Burning Glass data, having 539 job listings my selection for this as my ideal job remains strongly in place. Some of my existing skills are very highly ranked in this data set which justifies that I am on the right trajectory for my career path. With further knowledge of programming that I will gain from my work experience and this university degree I believe that I will be in a place to fill a position such as this one within a few years time. I am looking forward to more experience with group work and collaboration which has also been identified as top skills that are sought after by companies hiring for positions such as this one.<br>I expect job numbers for this role to grow exponentially over the coming years as the world moves towards a more technologically advanced future. There will soon be job titles we could never have imagined in this field just as there are jobs now that 20 years ago would have seemed impossible. I am looking forward to advancements in AI paving the way for these sorts of roles. My hope is that I will be able to find a position on the forefront of technology advancement upon completion of this degree.<br>To see creativity and problem solving being ranked so highly for these positions is extremely exciting as I believe creative problem solving is what makes software development so satisfying. Coming up with new ways to solve problems and having the freedom to use creative methods in the vast world of code is the main reason I enjoy what I do.</p>
+              </div>
+              <div class="tab-pane fade" id="tim" role="tabpanel" aria-labelledby="tim-tab">
+                <h4>Ideal Job: Junior Software Developer</h4>
+                <p>While the role of Junior Developer doesn't rank near the top in terms of demand determined by the number of job ads it is still in enough demand with 66 job ads placing it at 134 in the list over 200. The demand for the other more experienced roles may not something that can be applied for immediately after completing a degree in IT. Without the necessary experience it will be very difficult to position yourself and any of your potentially limited skill sets to an employer. I had chosen the junior Developer role as a natural stepping stone on the beginning of my journey through the IT industry. The general skills required such as communication skills, teamwork, problem solving and creativity and their rankings are inline with objectives and learning outcomes of this very unit.<br>The IT skill sets required for a junior role, let alone a senior role, rank well in terms of demand from potential employers. The highly sort after IT-specific skills that are on the top of the list yet but may not be sought after by employers of a junior role are SQL, Microsoft Windows and project management. While I currently have no experience with SQL I do have broad experience with the other two and would be confident expressing and demonstrating that to any potential employer. With the general skills required the top of the list is organisational skills, writing and troubleshooting. Again, with my years employed as both a project manager and operations manager am I confident I would be able to adequately demonstrate these skills to any potential employer.<br>Do I have higher aspirations? Absolutely. Currently my major interests lie in UNIX based operating systems and free, open source software projects. But due to previously being employed in management roles I am also aware that i need to work my way up to my goals through experience and I am more than prepared to do so.</p>
+              </div>
+              <div class="tab-pane fade" id="adam" role="tabpanel" aria-labelledby="adam-tab">
+                <h4>Ideal Job: Database Administrator</h4>
+                <p>The Database Administrator role is in relatively high demand, it ranks at 29 in top IT jobs with 238 job listings according to the Burning Glass data. When researching different job listings, it was clear that MySQL and Oracle database were the two key skills that are attractive to employers. MySQL was specifically mentioned, however, a broad range of SQL skills would also be highly beneficially down the track for a database admin career. I believe that if I am to pursue this career, then long term development of these two skills, along with background knowledge in JQuery, would inform me on whether I would have a passion for the job or not.<br>I was pleased to see that analytical skills are highly sought after, as I feel this is a strength of mine. Problem solving and troubleshooting says to me that the job can present different situations, making the days different and keeping the challenges fresh. This is important to me as learning something knew and tackling new problems will increase job satisfaction.<br>When broken down, my required skill set encourages me even more to explore this career path. It is in high demand, the specialised and general skills are too, I intend to pursue this further.</p>
+              </div>
+              <div class="tab-pane fade" id="lachlan" role="tabpanel" aria-labelledby="lachlan-tab">
+                <h4>Ideal Job: Maritime Warfare, Submariner Commander</h4>
+                <p>The demand for submarine commanders directly limited by the amount of submarines Australia owns and operates. The 2016 Defence Whitepaper sets out the long-term plan for the Australian Defence Force, in the paper the government has committed to doubling the number of submarines it will have, from 6 Collins-class submarines to 12-Attack-class submarines. The new submarines are expected to start construction in 2022 and start entering service from 2032. This increase in submarines will require an increase the required people to man and command them and works perfectly with my plan to start getting experience in the job. By the end of the 2030’s I should have enough experience and qualifications to become a commander as the new submarines are still entering service.<br>Since promotion in the Navy is competitive between candidates, my experience with diesel systems as a heavy-vehicle mechanic should give me an edge as the new submarines are diesel-electric powered and also my time in the army has developed my ability to think as a combatant and can directly be applied to using combat systems. Teamwork and leadership however are not my greatest skills and I will have to work on developing these professional tools.<br>Some of the specialized skill sets required for my ideal job is very niche and can only be gained through experience as a junior officer in the Navy, however I already have some of the generic skills and experience that can transfer over to some of the specialized skills. I am enthusiastic about transitioning into this career once I have completed my studies.</p>
+              </div>
+              <div class="tab-pane fade" id="elijah" role="tabpanel" aria-labelledby="elijah-tab">
+                <h4>Ideal Job: System Administrator</h4>
+                <p>According to Burning Glass Data 2018, system administrators are in constant demand due to the rapid growth of the IT industry. My opinion of an Ideal job has not currently changed but it may over time as I complete this course and gain more experience in the field. I feel like I am headed on a fantastic trajectory. One of my strong points is that I am a great communicator which is ranked one in job listings for my current role. Being dyslexic has been challenging and I have had to learn to play on my strong points in life which include communication and logical thinking. These are all required to be a system admin.<br>During this course I hope to continue to develop my communication skills while also working on building greater problem-solving methods that I can apply to future positions within this field. I would also like to gain a further understanding of SQL servers, server administration and cloud-based technology such as Azure, AWS, and GSuite.</p>
+              </div>
+              <div class="tab-pane fade" id="brenton" role="tabpanel" aria-labelledby="brenton-tab">
+                <h4>Ideal Job: IT Support Engineer</h4>
+                <p>According to Burning Glass Data 2018 an IT Support Engineer or Service Desk Analyst is ranked 5th with 779 Jobs posted. While my opinion of an Ideal job has not changed I feel like I’m heading on the path as I already acquire some of the strongly recommended skills needed such as Excellent Communication skills, Administrative skills and of course Team work/collaboration due to my current career as a qualified Chef and Café Supervisor in the hospitality field.<br>And with my current skills expanding with the help of RMIT’s Introduction to IT. I should be on my way to completing some of the other required skills such as Windows server knowledge as well as Cyber Security and Network Monitoring Software.</p>
+              </div>
             </div>
           </div>
         </div>
       </div><!-- /.container -->
 
-
       <!-- FOOTER -->
       <footer class="container">
         <p class="float-right"><a href="#">Back to top</a></p>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         <p>&copy; 2020 Tetradeca, COSC2196.</p>
       </footer>
     </main>
+
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
